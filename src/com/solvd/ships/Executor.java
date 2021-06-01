@@ -4,6 +4,8 @@ import com.solvd.ships.auxiliary.PilotShips;
 import com.solvd.ships.auxiliary.RescueShip;
 import com.solvd.ships.military.AircraftCarrier;
 import com.solvd.ships.military.Destroyers;
+import com.solvd.ships.technicalfleet.CraneVessels;
+import com.solvd.ships.technicalfleet.FloatingCranes;
 import com.solvd.ships.transport.CruizeShip;
 import com.solvd.ships.transport.Ñatamaran;
 
@@ -49,6 +51,15 @@ public class Executor {
 		RescueShip rescueShip = new RescueShip ();
 		rescueShip.printInformation();
 		
+		System.out.println ("===============FloatingCranes================");
+		FloatingCranes floatingCranes = new FloatingCranes ();
+		floatingCranes.printInfo();
+		floatingCranes.cruisingRange ();
+		
+		System.out.println ("===============CraneVessels================");
+		CraneVessels craneVessels = new CraneVessels ();
+		craneVessels.printInfo();
+		craneVessels.cruisingRange ();
 		
 	}
 	

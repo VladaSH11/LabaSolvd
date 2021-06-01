@@ -25,5 +25,10 @@ public class Destroyers extends MilitaryShip{
 	public void setArmament(String armament) {
 		this.armament = armament;
 	}
+
+	@Override
+	public void cruisingRange() {
+		
+	}
 	
 }

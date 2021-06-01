@@ -11,5 +11,10 @@ public class AircraftCarrier extends MilitaryShip{
 	  setLength (length);
 	  setDisplacement (displacement);
    }
+
+@Override
+public void cruisingRange() {
+	
+ }
    
 }
