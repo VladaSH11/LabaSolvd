@@ -7,7 +7,7 @@ import com.solvd.ships.military.Destroyers;
 import com.solvd.ships.technicalfleet.CraneVessels;
 import com.solvd.ships.technicalfleet.FloatingCranes;
 import com.solvd.ships.transport.CruizeShip;
-import com.solvd.ships.transport.Ñatamaran;
+import com.solvd.ships.transport.Catamaran;
 
 
 public class Executor {
@@ -39,7 +39,7 @@ public class Executor {
 		
 		System.out.println ("===============Catamaran================");
 		
-		Ñatamaran catamaran = new Ñatamaran("Diana", 106, 27000, 280);
+		Ã‘atamaran catamaran = new Ã‘atamaran("Diana", 106, 27000, 280);
 		catamaran.printCatamaran();
 		catamaran.print();
 		
