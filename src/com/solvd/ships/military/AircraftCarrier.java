@@ -15,6 +15,13 @@ public class AircraftCarrier extends MilitaryShip{
 @Override
 public void cruisingRange() {
 	
+	System.out.println ("Cruising range is 125 people");
  }
-   
+
+@Override
+public void printInfo() {
+	  
+	System.out.println ("This ship is made in " + getCountryOfOrigin() + "\n" + "Model of ship is " + getShipModel() + "\n" + "Length of ship is " + getLength() + " meters" + "\n" + "The displacement of ship is " + getDisplacement() + " tons");
+}
+
 }

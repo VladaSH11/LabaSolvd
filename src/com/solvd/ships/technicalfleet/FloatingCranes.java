@@ -9,14 +9,20 @@ public class FloatingCranes extends TechnicalFleetShip{
 	}
 	
 	@Override
-	public void printInfo () {
-		System.out.println ("Floating Crane-23");
+	public String toString () {
+		return "Purpose of ship is lifting large loads";
 	}
 	
 	
 	
 	@Override
 	public void cruisingRange () {
-		System.out.println ("Cruising range is " +getCruizeRange () + " miles. Name of ship is " + getName() + " with speed "+ getSpeed() + " nodes" );
+		System.out.println ( "Name of ship is " + getName());
+	}
+
+	@Override
+	public void printInfo() {
+		// TODO Auto-generated method stub
+		
 	}
 }

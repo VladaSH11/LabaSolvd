@@ -43,12 +43,11 @@ public abstract class TransportShip {
 	public int getLength () {
 		return this.length;
 	}
-	public void print () {
-		System.out.println ("Ship`s name is " + getName() );
-		System.out.println ("Crew size is " + getCrewSize() + " people" );
-		System.out.println ("Displacement is " + getDisplacement() + " tones" );
-		System.out.println ("Length is " + getLength() + " meters");
+	
+	public String toString () {
+		return "Ship`s name is " + getName() + "\n" + "Crew size is " + getCrewSize() + " people" + "\n" + "Displacement is " + getDisplacement() + " tones" + "\n" + "Length is " + getLength() + " meters";
 	}
+	
 	
 	
 

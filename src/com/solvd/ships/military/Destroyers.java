@@ -15,7 +15,7 @@ public class Destroyers extends MilitaryShip{
 
 	public void printInfoDestroyers() {
 		printInfo();
-		System.out.println ("Armament is " + getArmament());
+		System.out.println ("Armament is " + getArmament().toString());
 	}
 
 	public String getArmament() {
@@ -28,6 +28,11 @@ public class Destroyers extends MilitaryShip{
 
 	@Override
 	public void cruisingRange() {
+		
+	}
+
+	@Override
+	public void printInfo() {
 		
 	}
 	

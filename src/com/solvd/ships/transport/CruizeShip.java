@@ -24,7 +24,7 @@ public class CruizeShip extends TransportShip {
 	
     
 	public void printDestination () {
-		print();
+		toString();
 		System.out.println ( " The distanation point is " + getDestination());
 	
 	}

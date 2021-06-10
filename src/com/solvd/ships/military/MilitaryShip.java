@@ -19,13 +19,11 @@ public abstract class MilitaryShip implements Ships {
 	     this.setLength(length);
 	     this.setDisplacement(displacement);
 	 }
+	 
+	 public String toString () {
+		 return "This ship is made in " + getCountryOfOrigin() + "\n" + "Model of ship is " + getShipModel() + "\n" + "Length of ship is " + getLength() + " meters" + "\n" + "The displacement of ship is " + getDisplacement() + " tons"; 
+	 }
 
-	public void printInfo () {
-		System.out.println ("This ship is made in " + getCountryOfOrigin());
-		System.out.println ("Model of ship is " + getShipModel());
-		System.out.println ("Length of ship is " + getLength() + " meters");
-		System.out.println ("The displacement of ship is " + getDisplacement() + " tons");
-	}
 
 	public String getCountryOfOrigin() {
 		return countryOfOrigin;

@@ -12,8 +12,16 @@ public class CraneVessels extends TechnicalFleetShip {
 	
 	
 	@Override
-	public void cruisingRange () {
-		System.out.println ("Cruising range is " +getCruizeRange () + " miles. Name of ship is " + getName() + " purpose is " + getPurpose());
+	public String toString () {
+		return "Cruising range is " +getCruizeRange () + " miles. Name of ship is " + getName() + "." + " Purpose is " + getPurpose();
+	}
+
+
+
+	@Override
+	public void printInfo() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

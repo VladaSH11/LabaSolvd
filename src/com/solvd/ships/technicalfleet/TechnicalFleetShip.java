@@ -54,13 +54,10 @@ public abstract class TechnicalFleetShip implements Ships  {
 	}
 	
 	
-	@Override
-	public void printInfo () {
-		System.out.println ("Ship`s name is " + getName() );
-		System.out.println ("Purpose is " + getPurpose() + " people" );
-		System.out.println ("Speed is " + getSpeed() + " nodes");
-		System.out.println ("Cruize Range is " + getCruizeRange() + " miles");
+	public String toString () {
+		return "Ship`s name is " + getName() + "\n" + "Purpose is " + getPurpose() + " people" + "\n" + "Speed is " + getSpeed() + " nodes" + "\n" + "Cruize Range is " + getCruizeRange() + " miles";
 	}
+	
 	
 	@Override
 	public void cruisingRange () {

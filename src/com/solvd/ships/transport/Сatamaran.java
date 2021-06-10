@@ -34,11 +34,9 @@ public class Ñatamaran extends TransportShip{
 		this.model = model;
 	}
 	
-	public void printCatamaran() {
-		System.out.println ("Model of catamaran is " + getModel());
-		System.out.println ("Max speed of catamaran is " + getMaxSpeed() + " nodes");
+	public String toString() {
+		return "Model of catamaran is " + getModel() + "\n" + "Max speed of catamaran is " + getMaxSpeed() + " nodes";
 	}
-	
 }
 	
 

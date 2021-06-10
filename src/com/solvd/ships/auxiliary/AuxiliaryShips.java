@@ -50,12 +50,10 @@ public abstract class AuxiliaryShips {
 		return this.speed;
 	}
 	
-	public void printInformation () {
-		System.out.println ("Ship`s name is " + getName() );
-		System.out.println ("Purpose is " + getPurpose() + " people" );
-		System.out.println ("Displacement is " + getDisplacement() + " tones" );
-		System.out.println ("Speed is " + getSpeed() + " nodes");
+	public String toString() {
+		return "Ship name is " + getName() + "\n" + "Purpose is " + getPurpose() + " people" + "\n" + "Displacement is " + getDisplacement() + " tones" + "\n" + "Speed is " + getSpeed() + " nodes"; 
 	}
+	
 	
 	
 
