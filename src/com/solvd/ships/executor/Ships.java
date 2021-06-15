@@ -1,4 +1,4 @@
-package com.solvd.ships;
+package com.solvd.ships.executor;
 
 public interface Ships {
 	

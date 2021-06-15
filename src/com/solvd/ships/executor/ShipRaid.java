@@ -1,24 +1,27 @@
-package com.solvd.ships;
+package com.solvd.ships.executor;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
 import com.solvd.ships.auxiliary.PilotShips;
 import com.solvd.ships.military.Destroyers;
-import com.solvd.ships.transport.Ñatamaran;
-
+import com.solvd.ships.transport.Catamaran;
+import com.solvd.ships.technicalfleet.CraneVessels;
 
 public class ShipRaid {
 	
-	private List<Destroyers> listOfDestroyers;
-    private List<PilotShips> listOfPilotShips;
-    private List<Ñatamaran> listOfCatamaran;
+	public List<Destroyers> listOfDestroyers;
+    public List<PilotShips> listOfPilotShips;
+    public List<Catamaran> listOfCatamaran;
+    public HashSet <CraneVessels> hashSetCraneVessels;
 
     public ShipRaid() {
     	listOfDestroyers = new ArrayList<>();
     	listOfPilotShips = new LinkedList<>();
     	listOfCatamaran = new ArrayList <>();
+    	hashSetCraneVessels = new HashSet <> ();
     }
 
     public void setDestroyers(Destroyers destroyers) {
@@ -28,7 +31,7 @@ public class ShipRaid {
     	listOfPilotShips.add(pilotShips);
     }
     
-    public void setCatamaran(Ñatamaran catamaran) {
+    public void setCatamaran(Catamaran catamaran) {
     	listOfCatamaran.add(catamaran);
     }
 
@@ -40,9 +43,19 @@ public class ShipRaid {
         return listOfPilotShips;
     }
     
-    public List<Ñatamaran> getlistOfCatamaran() {
+    public List<Catamaran> getlistOfCatamaran() {
         return listOfCatamaran;
     }
+
+
+	public void addCraneVessels(CraneVessels craneVessels) {
+		hashSetCraneVessels.add(craneVessels);
+	}
+	
+	
+	public HashSet <CraneVessels> getCraneVessels() {
+		return hashSetCraneVessels;
+	}
     
 }
 

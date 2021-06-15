@@ -2,11 +2,11 @@ package com.solvd.ships.technicalfleet;
 
 public class CraneVessels extends TechnicalFleetShip {
 	
-	public CraneVessels () {
-		setName("CR-187");
-		setPurpose ("lifting of small vessels");
-		setSpeed (18);
-		setCruizeRange (2100);
+	public CraneVessels (String name, String purpose, int speed, int cruizeRange) {
+		setName(name);
+		setPurpose (purpose);
+		setSpeed (speed);
+		setCruizeRange (cruizeRange);
 	}
 	
 	

@@ -1,6 +1,6 @@
 package com.solvd.ships.military;
 
-import com.solvd.ships.Ships;
+import com.solvd.ships.executor.Ships;
 
 public abstract class MilitaryShip implements Ships {
 	

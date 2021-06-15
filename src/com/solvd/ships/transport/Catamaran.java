@@ -1,17 +1,17 @@
 package com.solvd.ships.transport;
 
-public class Ñatamaran extends TransportShip{
+public class Catamaran extends TransportShip{
 	
 	private String model;
 	private int maxSpeed;
 	
-	public Ñatamaran() {
+	public Catamaran() {
 		setModel ("Medium");
 		setMaxSpeed (23);
 		
 	}
 	
-	public Ñatamaran(String name, int crewSize, int displacement, int length) {
+	public Catamaran(String name, int crewSize, int displacement, int length) {
 		super ( name,  crewSize,  displacement,  length);
 		setModel ("Medium");
 		setMaxSpeed (23); 
